@@ -1,13 +1,16 @@
 'use client'
+import variables from '../../style/variable.module.scss'
 
-const Input = () => {
+type InputProps = {
+    value : string;
+    onChange: ()=>void;
+}
+const Input = ({value,onChange} : InputProps) => {
     return (
-        <h1>Helllo </h1>
+        <input 
+        value={value}
+        onChange={onChange}
+        style={{ backgroundColor: variables.primaryColor }} />
     )
 }
 export default Input
-
-
-
-
-

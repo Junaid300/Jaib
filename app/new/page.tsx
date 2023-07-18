@@ -1,9 +1,11 @@
+import { useState } from "react"
 import Input from "../components/input/Input"
+import PriceCalculator from "../containers/PriceCalculator/PriceCalculator"
 
 const NewPage = () => {
     return (
         <>
-            <Input />
+        <PriceCalculator />
             <h1>NEW PAGE</h1>
         </>
     )
